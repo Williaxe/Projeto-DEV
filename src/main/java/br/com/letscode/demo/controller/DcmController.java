@@ -15,21 +15,15 @@ public class DcmController {
     @Autowired
     private DCMService dcmService;
 
-
-
-
-
     @GetMapping("/{idDcm}/{juncaoRemetente}/{juncaoDestinatario}")
     public ResponseEntity<Object> getDCMById(@PathVariable(value = "idDcm")Integer idDcm ,
                                              @PathVariable(value = "juncaoRemetente") String idJuncaoRemetente,
-                                             @PathVariable(value = "juncaoDestinatario") String idJuncaoDestinatario) {
-        return ResponseEntity.status(HttpStatus.OK).body(dcmService);
-
+                                             @PathVariable(value = "juncaoDestinatario") String idJuncaoDestinatario)
+    { return ResponseEntity.status(HttpStatus.OK).body(dcmService);
     }
 
     @PostMapping
     public DCM adicionarDcm(@RequestBody DCM dcm){
-
         return dcmService.save(dcm);
     }
 

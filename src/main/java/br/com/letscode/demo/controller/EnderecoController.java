@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/enderecos")
 
@@ -20,6 +19,5 @@ public class EnderecoController {
     @GetMapping
     public List<Endereco> getEndereco() {
         return enderecoService.getAllEndereco();
-
     }
 }

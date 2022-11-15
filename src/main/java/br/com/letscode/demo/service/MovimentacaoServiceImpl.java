@@ -1,7 +1,6 @@
 package br.com.letscode.demo.service;
 
 import br.com.letscode.demo.domain.Movimentacao;
-
 import java.util.List;
 
 public class MovimentacaoServiceImpl implements MovimentacaoService {
@@ -27,6 +26,5 @@ public class MovimentacaoServiceImpl implements MovimentacaoService {
 
     @Override
     public void delete(Long id) {
-
     }
 }

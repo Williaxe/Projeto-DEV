@@ -2,7 +2,6 @@ package br.com.letscode.demo.service;
 
 import br.com.letscode.demo.domain.Agencia;
 import br.com.letscode.demo.domain.Endereco;
-
 import java.util.List;
 
 public interface AgenciaService {

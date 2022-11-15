@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Collections;
 import java.util.List;
 
@@ -16,11 +15,7 @@ import java.util.List;
 public class DcmServiceImpl implements DCMService {
 
     @Autowired
-
     private DCMRepository dcmRepository;
-
-
-
 
     @Override
     public List<DCM> list(Integer idDcm, String juncaoDestinatario, String juncaoRemetente) {
@@ -31,15 +26,13 @@ public class DcmServiceImpl implements DCMService {
         return dcmRepository.findAllByJuncaoDestinatarioAndJuncaoRemetente(juncaoDestinatario, juncaoRemetente);
     }
 
-
     @Override
     public DCM save(DCM dcm) {
-
         return dcmRepository.save(dcm);
     }
+
     @Override
     public DCM getById(Integer id) {
-
         return dcmRepository.findById(id).get();
     }
 
@@ -51,7 +44,6 @@ public class DcmServiceImpl implements DCMService {
 
     @Override
     public void delete(Integer id) {
-
         dcmRepository.deleteById(id);
     }
 }

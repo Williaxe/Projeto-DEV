@@ -27,12 +27,11 @@ public class AgenciaServiceImpl implements AgenciaService{
 
     @Override
     public Agencia save(Agencia agencia) {
-
         return agenciaRepository.save(agencia);
     }
+
     @Override
     public Agencia getById(Integer id) {
-
         return agenciaRepository.findById(id).get();
     }
 
@@ -44,11 +43,10 @@ public class AgenciaServiceImpl implements AgenciaService{
 
     @Override
     public void delete(Integer id) {
-
         agenciaRepository.deleteById(id);
     }
-    @Override
 
+    @Override
     public Endereco buscaEndereco(String nome, Integer idJuncao) throws Exception {
        var agenciaJuncao = agenciaRepository.findById(idJuncao);
        if(agenciaJuncao.isEmpty()){

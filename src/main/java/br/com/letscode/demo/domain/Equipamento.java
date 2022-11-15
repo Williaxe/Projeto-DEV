@@ -1,13 +1,10 @@
 package br.com.letscode.demo.domain;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
-
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -56,9 +53,7 @@ public class Equipamento {
     @JsonIgnore
     private Movimentacao movimentacao;
 
-
     public Equipamento(String s, String lenovo, int i, Object o, String computador, Object o1, int i1, int i2, Object o2) {
-
     }
 
     public void setIdEquipamento(Integer id) {

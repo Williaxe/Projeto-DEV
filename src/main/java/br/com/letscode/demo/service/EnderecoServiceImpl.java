@@ -5,14 +5,12 @@ import br.com.letscode.demo.repository.EnderecoRepository;
 import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 @Service
 public class EnderecoServiceImpl implements EnderecoService{
 
     @Autowired
     public EnderecoRepository enderecoRepository;
-
 
     @Override
     public Endereco save(Endereco endereco) {
@@ -33,7 +31,6 @@ public class EnderecoServiceImpl implements EnderecoService{
     @Override
     public void delete(Long id) {
         enderecoRepository.deleteById(id);
-
     }
 
     @Override

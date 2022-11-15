@@ -17,15 +17,13 @@ public class AgenciaController {
 
     public AgenciaController (AgenciaService agenciaService){
         this.agenciaService = agenciaService;
-
     }
+
     @GetMapping("/{nome}/{idJuncao}")
     public Endereco buscaEndereco(@PathVariable(value = "nome")String nome,
                                   @PathVariable(value = "idJuncao") Integer idJuncao) throws Exception {
         return agenciaService.buscaEndereco(nome, idJuncao);
-
     }
-
 
     @DeleteMapping("/{idJuncao}")
     public ResponseEntity<Object> deletaAgencia(@PathVariable(value = "idJuncao")Integer idJuncao){
@@ -43,7 +41,5 @@ public class AgenciaController {
                                   @RequestBody Agencia agencia){
         return agenciaService.update(idJuncao, agencia);
     }
-
-
 
 }

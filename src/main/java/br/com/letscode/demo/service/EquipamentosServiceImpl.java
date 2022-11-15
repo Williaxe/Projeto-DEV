@@ -6,7 +6,6 @@ import br.com.letscode.demo.repository.EquipamentoRepository;
 import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -17,16 +16,13 @@ public class EquipamentosServiceImpl implements EquipamentoService{
     @Autowired
     public EquipamentoRepository equipamentoRepository;
 
-
     @Override
     public Equipamento save(Equipamento equipamento) {
-
         return equipamentoRepository.save(equipamento);
     }
 
     @Override
     public Equipamento getById(Integer id) {
-
         return equipamentoRepository.findById(id).get();
     }
 
@@ -35,7 +31,6 @@ public class EquipamentosServiceImpl implements EquipamentoService{
  //       return (List<Equipamento>) equipamentoRepository.findAllByMarca(marca);
         return (List<Equipamento>) equipamentoRepository.findAll();
   }
-
 
     @Override
     public List<Equipamento> getByIdModelo(String modelo) {
@@ -51,6 +46,5 @@ public class EquipamentosServiceImpl implements EquipamentoService{
     @Override
     public void delete(Integer id) {
         equipamentoRepository.deleteById(id);
-
     }
 }
