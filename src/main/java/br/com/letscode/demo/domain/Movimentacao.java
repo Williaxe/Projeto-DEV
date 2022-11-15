@@ -16,9 +16,10 @@ import java.util.Set;
 
 public class Movimentacao {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
 
-    private Integer idEquipamentos;
-    private Integer idDcm;
+    private Integer id;
+
 
     @OneToMany(mappedBy = "movimentacao")
     @JsonIgnoreProperties("movimentacao")

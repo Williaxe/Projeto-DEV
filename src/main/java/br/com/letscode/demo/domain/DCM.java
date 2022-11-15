@@ -1,8 +1,9 @@
 package br.com.letscode.demo.domain;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -10,13 +11,17 @@ import javax.persistence.*;
 @Table
 @Setter
 @Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+
 
 public class DCM {
     @Id
 
     private Integer idDcm;
     private Integer valor;
-    private LocalDateTime dataMovimentacao;
+    private LocalDate dataMovimentacao;
     private String juncaoRemetente;
     private String juncaoDestinatario;
 

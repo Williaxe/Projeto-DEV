@@ -27,10 +27,12 @@ public class AgenciaServiceImpl implements AgenciaService{
 
     @Override
     public Agencia save(Agencia agencia) {
+
         return agenciaRepository.save(agencia);
     }
     @Override
     public Agencia getById(Integer id) {
+
         return agenciaRepository.findById(id).get();
     }
 
@@ -57,5 +59,5 @@ public class AgenciaServiceImpl implements AgenciaService{
          return agenciaNome.get().getEndereco();
        }
        return agenciaJuncao.get().getEndereco();
-    }
+}
 }

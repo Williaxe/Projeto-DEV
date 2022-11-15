@@ -12,8 +12,7 @@ public interface GestaoService {
     Gestao save(Gestao gestao);
 
 
-    Gestao getById(Long id);
-
+    Gestao getById(Integer id);
 
     Gestao update(Integer id, Gestao gestao);
 

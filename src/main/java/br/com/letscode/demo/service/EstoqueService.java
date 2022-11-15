@@ -1,11 +1,15 @@
 package br.com.letscode.demo.service;
+import br.com.letscode.demo.service.EstoqueService;
 
-import br.com.letscode.demo.domain.Equipamento;
+
+import br.com.letscode.demo.domain.Endereco;
 import br.com.letscode.demo.domain.Estoque;
 
 import java.util.List;
 
 public interface EstoqueService {
+
+    List<Estoque> list(String nome);
 
 
     Estoque save(Estoque estoque);
@@ -18,4 +22,5 @@ public interface EstoqueService {
 
     void delete(Integer id);
 
+    Endereco buscaEndereco(String nome, Integer idJuncao) throws Exception;
 }

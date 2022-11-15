@@ -7,6 +7,7 @@ import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -18,6 +19,17 @@ public class DcmServiceImpl implements DCMService {
 
     private DCMRepository dcmRepository;
 
+
+
+
+    @Override
+    public List<DCM> list(Integer idDcm, String juncaoDestinatario, String juncaoRemetente) {
+        var dcm = dcmRepository.findById( idDcm);
+        if (dcm.isPresent()){
+            return Collections.singletonList(dcm.get());
+        }
+        return dcmRepository.findAllByJuncaoDestinatarioAndJuncaoRemetente(juncaoDestinatario, juncaoRemetente);
+    }
 
 
     @Override
