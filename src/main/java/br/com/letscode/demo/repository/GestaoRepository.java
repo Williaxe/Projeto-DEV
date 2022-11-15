@@ -10,4 +10,7 @@ import java.util.List;
 
 public interface GestaoRepository extends CrudRepository<Gestao, Integer> {
 
+    Object findAllByDepartamentoContains(String departamento);
+
+    void deleteById(Integer id);
 }

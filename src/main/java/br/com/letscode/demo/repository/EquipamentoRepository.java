@@ -14,5 +14,6 @@ public interface EquipamentoRepository extends CrudRepository<Equipamento, Integ
 
 
     List<Equipamento>findAllByMarca(String marca);
+    List<Equipamento>findAllByModelo(String modelo);
 }
 

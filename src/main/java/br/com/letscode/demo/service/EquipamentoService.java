@@ -13,6 +13,9 @@ public interface EquipamentoService {
 
 
     Equipamento getById(Integer id);
+    List<Equipamento> getByIdMarca(String marca);
+    List<Equipamento> getByIdModelo(String modelo);
+
 
 
     Equipamento update(Integer id, Equipamento equipamento);

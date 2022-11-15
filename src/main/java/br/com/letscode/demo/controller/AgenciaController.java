@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Agencias")
+@RequestMapping("/agencias")
 
 public class AgenciaController {
     private AgenciaService agenciaService;
@@ -25,7 +25,7 @@ public class AgenciaController {
         return agenciaService.buscaEndereco(nome, idJuncao);
 
     }
-    //comentario teste
+
 
     @DeleteMapping("/{idJuncao}")
     public ResponseEntity<Object> deletaAgencia(@PathVariable(value = "idJuncao")Integer idJuncao){
@@ -37,6 +37,7 @@ public class AgenciaController {
     public Agencia adicionaAgencia(@RequestBody Agencia agencia){
         return agenciaService.save(agencia);
     }
+
     @PatchMapping("/{idJuncao}")
     public Agencia alterarAgencia(@PathVariable(value = "idJuncao")Integer idJuncao,
                                   @RequestBody Agencia agencia){

@@ -8,6 +8,8 @@ import java.util.List;
 public interface EnderecoService {
 
 
+
+
     Endereco save(Endereco endereco);
 
 
@@ -17,5 +19,7 @@ public interface EnderecoService {
     Endereco update(Integer id, Endereco endereco);
 
     void delete(Long id);
+
+    List<Endereco> getAllEndereco();
 }
 

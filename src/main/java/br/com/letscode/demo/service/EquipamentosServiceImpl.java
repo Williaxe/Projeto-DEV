@@ -20,12 +20,26 @@ public class EquipamentosServiceImpl implements EquipamentoService{
 
     @Override
     public Equipamento save(Equipamento equipamento) {
+
         return equipamentoRepository.save(equipamento);
     }
 
     @Override
     public Equipamento getById(Integer id) {
+
         return equipamentoRepository.findById(id).get();
+    }
+
+    @Override
+    public List<Equipamento> getByIdMarca(String marca) {
+ //       return (List<Equipamento>) equipamentoRepository.findAllByMarca(marca);
+        return (List<Equipamento>) equipamentoRepository.findAll();
+  }
+
+
+    @Override
+    public List<Equipamento> getByIdModelo(String modelo) {
+        return equipamentoRepository.findAllByModelo(modelo);
     }
 
     @Override
