@@ -6,13 +6,9 @@ import java.util.List;
 
 public interface GestaoService {
 
-    List<Gestao> list(String nome);
+    List<Gestao> list();
 
     Gestao save(Gestao gestao);
 
-    Gestao getById(Integer id);
-
-    Gestao update(Integer id, Gestao gestao);
-
-    void delete(Long id);
+    void delete(Integer id);
 }

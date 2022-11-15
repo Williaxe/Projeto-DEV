@@ -4,48 +4,27 @@ import br.com.letscode.demo.domain.Gestao;
 import br.com.letscode.demo.repository.GestaoRepository;
 import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+@Service
+public class GestaoServiceImpl implements GestaoService {
 
-//public class GestaoServiceImpl implements GestaoService{
+    @Autowired
+    private GestaoRepository gestaoRepository;
 
-//    @Autowired
-//    private GestaoRepository gestaoRepository;
+    @Override
+    public List<Gestao> list() {
+        return gestaoRepository.findAll();
+    }
 
-//    @Override
-//    public List<Gestao> list(String departamento) {
-//
-//        if (departamento == null) {
-//            return IterableUtils.toList(gestaoRepository.findAll());
-//        }
-//        return IterableUtils.toList(gestaoRepository.findAllByDepartamentoContains(departamento));
-//    }
+    @Override
+    public Gestao save(Gestao gestao) {
+        return gestaoRepository.saveAndFlush(gestao);
+    }
 
-//    @Override
-//    public Gestao save(Gestao gestao) {
-//        return gestaoRepository.save(gestao);
-//    }
-//
-//    @Override
-//    public Gestao getById(Integer id) {
-//        return gestaoRepository.findById(id).get();
-//    }
-//
-//    @Override
-//    public Gestao getById(Integer id) {
-//
-//        return gestaoRepository.findById(id).get();
-//    }
-//
-//    @Override
-//    public Gestao update(Integer id, Gestao gestao) {
-//        gestao.setId(id);
-//        return gestaoRepository.save(gestao);
-//    }
-//
-//    @Override
-//    public void delete(Long id) {
-//        gestaoRepository.deleteById(id);
-//
-//    }
-//}
+    @Override
+    public void delete(Integer id) {
+        gestaoRepository.deleteById(id);
+    }
+}
