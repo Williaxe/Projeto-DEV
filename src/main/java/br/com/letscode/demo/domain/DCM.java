@@ -1,10 +1,9 @@
 package br.com.letscode.demo.domain;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import lombok.*;
+
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table
@@ -25,7 +24,7 @@ public class DCM {
     private String juncaoDestinatario;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Movimentacao_id")
-    private Movimentacao movimentacao;
+    @JoinColumn(name = "Equipamento_id")
+    private Equipamento equipamento;
 
 }

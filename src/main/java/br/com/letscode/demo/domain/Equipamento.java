@@ -1,22 +1,18 @@
 package br.com.letscode.demo.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
-@Table
+@Table(name = "Equipamento")
 @Setter
-@Getter
 @NoArgsConstructor
-
-
+@Getter
+@Builder
+@AllArgsConstructor
 public class Equipamento {
 
     @Id
@@ -29,6 +25,7 @@ public class Equipamento {
     private String tipo;
     private Integer serie;
     private Integer idGestao;
+    private String juncaoAtual;
    // private Integer idAgencia;
    // private Integer idEstoque;
 
@@ -49,9 +46,9 @@ public class Equipamento {
     private Gestao gestao;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Movimentacao_id")
+    @JoinColumn(name = "DCM_id")
     @JsonIgnore
-    private Movimentacao movimentacao;
+    private DCM dcm;
 
     public Equipamento(String s, String lenovo, int i, Object o, String computador, Object o1, int i1, int i2, Object o2) {
     }

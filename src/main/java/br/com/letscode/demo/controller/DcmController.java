@@ -1,8 +1,9 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.domain.Agencia;
-import br.com.letscode.demo.domain.DCM;
-import br.com.letscode.demo.service.DCMService;
+import br.com.letscode.demo.config.HandlerException;
+import br.com.letscode.demo.domain_old.DCM;
+import br.com.letscode.demo.dto.DCMDto;
+import br.com.letscode.demo.service_old.DCMService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +24,9 @@ public class DcmController {
     }
 
     @PostMapping
-    public DCM adicionarDcm(@RequestBody DCM dcm){
-        return dcmService.save(dcm);
+    public DCM adicionarDcm(@RequestBody DCMDto dto) throws HandlerException {
+        return dcmService.save(dto);
     }
 
-}
+
+    }

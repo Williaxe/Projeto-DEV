@@ -1,13 +1,10 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.domain.Agencia;
-import br.com.letscode.demo.domain.Endereco;
-import br.com.letscode.demo.service.AgenciaService;
-import org.springframework.http.HttpStatus;
+import br.com.letscode.demo.domain_old.Agencia;
+import br.com.letscode.demo.domain_old.Endereco;
+import br.com.letscode.demo.service_old.AgenciaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/agencias")
@@ -18,6 +15,8 @@ public class AgenciaController {
     public AgenciaController (AgenciaService agenciaService){
         this.agenciaService = agenciaService;
     }
+
+
 
     @GetMapping("/{nome}/{idJuncao}")
     public Endereco buscaEndereco(@PathVariable(value = "nome")String nome,

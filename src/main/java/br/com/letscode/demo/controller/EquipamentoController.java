@@ -1,14 +1,10 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.domain.Agencia;
-import br.com.letscode.demo.domain.Endereco;
-import br.com.letscode.demo.domain.Equipamento;
-import br.com.letscode.demo.service.EquipamentoService;
-import br.com.letscode.demo.service.EquipamentosServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import br.com.letscode.demo.domain_old.Equipamento;
+import br.com.letscode.demo.service_old.EquipamentoService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.Collections;
+
 import java.util.List;
 
 @RestController
@@ -35,4 +31,21 @@ public class EquipamentoController {
     public Equipamento adicionaEquipamento(@RequestBody Equipamento equipamento){
         return equipamentoService.save(equipamento);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> deletaEquipamento(@PathVariable (value = "id") Integer id) throws Exception {
+        equipamentoService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PatchMapping("/{id}")
+    public Equipamento alterarEquipamento(@PathVariable(value = "id")Integer idEquipamento,
+                                          @RequestBody Equipamento equipamento){
+        return equipamentoService.update(idEquipamento, equipamento);
+    }
+
+
+
+
+
 }

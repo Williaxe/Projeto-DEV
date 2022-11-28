@@ -17,6 +17,8 @@ public class AgenciaServiceImpl implements AgenciaService{
     @Autowired
     private AgenciaRepository agenciaRepository;
 
+
+
     @Override
     public List<Agencia> list(String nome) {
         if (nome == null) {
@@ -58,4 +60,9 @@ public class AgenciaServiceImpl implements AgenciaService{
        }
        return agenciaJuncao.get().getEndereco();
 }
+
+    @Override
+    public Endereco list() {
+        return null;
+    }
 }

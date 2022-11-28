@@ -2,9 +2,9 @@ package br.com.letscode.demo.service;
 
 import br.com.letscode.demo.domain.Endereco;
 import br.com.letscode.demo.repository.EnderecoRepository;
-import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 @Service
 public class EnderecoServiceImpl implements EnderecoService{

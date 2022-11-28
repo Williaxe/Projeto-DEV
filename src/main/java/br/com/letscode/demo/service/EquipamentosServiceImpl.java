@@ -1,13 +1,10 @@
 package br.com.letscode.demo.service;
 
-import br.com.letscode.demo.domain.Endereco;
 import br.com.letscode.demo.domain.Equipamento;
 import br.com.letscode.demo.repository.EquipamentoRepository;
-import org.apache.commons.collections4.IterableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 
 @Service("Equipamento")
@@ -44,7 +41,12 @@ public class EquipamentosServiceImpl implements EquipamentoService{
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Integer id) throws Exception {
+        if(equipamentoRepository.findById(id).get().getDcm() != null){
+            throw new Exception("Equipamento vinculado a um DCM");
+        }
+
         equipamentoRepository.deleteById(id);
+
     }
 }
