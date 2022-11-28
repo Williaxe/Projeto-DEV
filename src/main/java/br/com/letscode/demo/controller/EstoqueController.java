@@ -1,8 +1,8 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.domain_old.Endereco;
-import br.com.letscode.demo.domain_old.Estoque;
-import br.com.letscode.demo.service_old.EstoqueService;
+import br.com.letscode.demo.domain.Endereco;
+import br.com.letscode.demo.domain.Estoque;
+import br.com.letscode.demo.service.EstoqueService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

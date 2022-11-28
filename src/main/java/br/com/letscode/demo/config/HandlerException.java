@@ -1,9 +1,10 @@
 package br.com.letscode.demo.config;
 
-import br.com.letscode.demo.domain_old.DCM;
+import br.com.letscode.demo.domain.DCM;
 import br.com.letscode.demo.dto.DCMDto;
-import br.com.letscode.demo.repository_old.DCMRepository;
-import br.com.letscode.demo.repository_old.EquipamentoRepository;
+import br.com.letscode.demo.repository.DCMRepository;
+import br.com.letscode.demo.repository.EquipamentoRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

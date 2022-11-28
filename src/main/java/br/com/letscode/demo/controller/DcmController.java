@@ -1,9 +1,9 @@
 package br.com.letscode.demo.controller;
 
 import br.com.letscode.demo.config.HandlerException;
-import br.com.letscode.demo.domain_old.DCM;
+import br.com.letscode.demo.domain.DCM;
 import br.com.letscode.demo.dto.DCMDto;
-import br.com.letscode.demo.service_old.DCMService;
+import br.com.letscode.demo.service.DCMService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

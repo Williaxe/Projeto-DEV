@@ -1,7 +1,7 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.domain_old.Gestao;
-import br.com.letscode.demo.service_old.GestaoService;
+import br.com.letscode.demo.domain.Gestao;
+import br.com.letscode.demo.service.GestaoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
