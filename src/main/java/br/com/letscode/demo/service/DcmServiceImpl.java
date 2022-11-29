@@ -1,6 +1,7 @@
 package br.com.letscode.demo.service;
 
-import br.com.letscode.demo.config.HandlerException;
+import br.com.letscode.demo.Exception.EquipamentoNaoConstaNaJuncao;
+import br.com.letscode.demo.Exception.EquipamentoNaoLocalizado;
 import br.com.letscode.demo.domain.DCM;
 import br.com.letscode.demo.dto.DCMDto;
 import br.com.letscode.demo.repository.DCMRepository;
@@ -33,10 +34,10 @@ public class DcmServiceImpl implements DCMService {
     }
 
     @ExceptionHandler
-    public DCM save(DCMDto dto) throws HandlerException {
+    public DCM save(DCMDto dto) throws Exception {
        var equipamento = equipamentoRepository.findById(dto.getIdEquipamento());
         if (equipamento.isEmpty()){
-            throw new HandlerException("Equipamento não localizado");
+            throw new EquipamentoNaoLocalizado();
 
    //  public DCM save(DCMDto dto) throws HandlerException {
    //      var equipamento = equipamentoRepository.findById(dto.getIdEquipamento());
@@ -55,7 +56,7 @@ public class DcmServiceImpl implements DCMService {
 
             return dcmRepository.save(dcm);
         }
-        throw new HandlerException("Equipamento não consta na junção") ;
+        throw new EquipamentoNaoConstaNaJuncao() ;
 
     }
 

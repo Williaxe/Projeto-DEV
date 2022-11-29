@@ -1,6 +1,6 @@
 package br.com.letscode.demo.controller;
 
-import br.com.letscode.demo.config.HandlerException;
+
 import br.com.letscode.demo.domain.DCM;
 import br.com.letscode.demo.dto.DCMDto;
 import br.com.letscode.demo.service.DCMService;
@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Dcms")
+@RequestMapping("/dcms")
 
 public class DcmController {
     @Autowired
@@ -24,9 +24,11 @@ public class DcmController {
     }
 
     @PostMapping
-    public DCM adicionarDcm(@RequestBody DCMDto dto) throws HandlerException {
+
+    public DCM adicionarDcm(@RequestBody DCMDto dto) throws Exception {
         return dcmService.save(dto);
     }
+
 
 
     }

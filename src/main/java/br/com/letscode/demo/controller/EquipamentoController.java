@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Equipamentos")
+@RequestMapping("/equipamentos")
 public class EquipamentoController {
 
     private EquipamentoService equipamentoService;
@@ -43,9 +43,6 @@ public class EquipamentoController {
                                           @RequestBody Equipamento equipamento){
         return equipamentoService.update(idEquipamento, equipamento);
     }
-
-
-
 
 
 }
