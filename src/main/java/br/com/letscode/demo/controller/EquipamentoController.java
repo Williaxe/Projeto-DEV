@@ -32,7 +32,7 @@ public class EquipamentoController {
         return equipamentoService.save(equipamento);
     }
 
-    @PatchMapping("/{id}")
+    @PutMapping("/{id}")
     public Equipamento alterarEquipamento(@PathVariable(value = "id")Integer idEquipamento,
                                           @RequestBody Equipamento equipamento){
         return equipamentoService.update(idEquipamento, equipamento);

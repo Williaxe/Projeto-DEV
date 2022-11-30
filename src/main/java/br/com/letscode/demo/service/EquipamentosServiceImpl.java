@@ -36,7 +36,7 @@ public class EquipamentosServiceImpl implements EquipamentoService{
 
     @Override
     public Equipamento update(Integer id, Equipamento equipamento) {
-        equipamento.setIdEquipamento(id);
+        equipamento.setId(id);
         return equipamentoRepository.save(equipamento);
     }
 
