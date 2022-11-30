@@ -201,61 +201,6 @@
 					]
 				},
 				{
-					"name": "Deletando Equipamento",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/Equipamentos/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"Equipamentos",
-								"2"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "DEL Deletar equipamento",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/equipamentos/524877",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"equipamentos",
-										"524877"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "Text",
-							"header": [],
-							"cookie": [],
-							"body": " {\r\n        \"modelo\": \"93MP\",\r\n        \"marca\": \"lenovo\",\r\n        \"dataAquisicao\": null,\r\n        \"tipo\": \"Microcomputador\",\r\n        \"serie\": 524877,\r\n        \"idGestao\": \"Dotação\",\r\n        \"idAgencia\": 93,\r\n        \"idEstoque\": null,\r\n        \"estoque\": null,\r\n        \"agencia\": 93,\r\n        \"gestao\": \"Dotação\",\r\n        \"movimentacao\": \"idEquipamento\"\r\n    }"
-						}
-					]
-				},
-				{
 					"name": "Atualização Equipamento",
 					"request": {
 						"method": "PUT",
