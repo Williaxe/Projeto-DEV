@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "8791f71a-5927-439e-90ae-fdea48892bb2",
+		"_postman_id": "7b7c2471-04fa-479f-8ca4-d922dfe9076e",
 		"name": "Doc API - Projeto",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "24148363"
+		"_exporter_id": "23821836"
 	},
 	"item": [
 		{
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n        \"modelo\": \"LCD\",\r\n        \"marca\": \"AOC\",\r\n        \"dataAquisicao\": \"2021-09-22\",\r\n        \"tipo\": \"Monitor\",\r\n        \"serie\": 52751,\r\n        \"idGestao\": \"1\",\r\n        \"juncaoAtual\": \"04312EX001\",\r\n        \r\n        \"estoque\": {\r\n            \"idJuncao\": \"4312\",\r\n            \"nome\": \"Galpão\"\r\n        },\r\n        \"agencia\": {\r\n            \"idJuncao\": null,\r\n            \"nome\":null\r\n        },\r\n\r\n        \"gestao\": {\r\n                \"departamento\":\"dotacao\"\r\n        }\r\n}\r\n",
+							"raw": " {\r\n        \"modelo\": \"Monitor\",\r\n        \"marca\": \"Lenovo\",\r\n        \"dataAquisicao\": \"2021-09-22\",\r\n        \"tipo\": \"Monitor\",\r\n        \"serie\": 527551,\r\n        \"idGestao\": \"1\",\r\n        \"juncaoAtual\": \"04312EX001\",\r\n        \r\n        \"estoque\": {\r\n            \"idJuncao\": \"4312\",\r\n            \"nome\": \"Galpão\"\r\n        },\r\n        \"agencia\": {\r\n            \"idJuncao\": null,\r\n            \"nome\":null\r\n        },\r\n\r\n        \"gestao\": {\r\n                \"departamento\":\"dotacao\"\r\n        }\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -69,8 +69,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": ""
 						}
@@ -131,8 +131,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "[\r\n    {\r\n        \"modelo\": \"modelo\",\r\n        \"marca\": \"equipamento marca lenovo\",\r\n        \"dataAquisicao\": null,\r\n        \"tipo\": \"tipo\",\r\n        \"serie\": \"serie\",\r\n        \"idGestao\": \"idGEstao\",\r\n        \"idAgencia\": \"idAgencia\",\r\n        \"idEstoque\": \"idEstoque\",\r\n        \"estoque\": \"estoque\",\r\n        \"agencia\": \"agencia\",\r\n        \"gestao\": \"gestao\",\r\n        \"movimentacao\": \"movimentacao\"\r\n    }\r\n]\r\n"
 						}
@@ -193,8 +193,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "[\r\n    {\r\n        \"modelo\": \"modelo\",\r\n        \"marca\": \"equipamento marca lenovo\",\r\n        \"dataAquisicao\": null,\r\n        \"tipo\": \"tipo\",\r\n        \"serie\": \"serie\",\r\n        \"idGestao\": \"idGEstao\",\r\n        \"idAgencia\": \"idAgencia\",\r\n        \"idEstoque\": \"idEstoque\",\r\n        \"estoque\": \"estoque\",\r\n        \"agencia\": \"agencia\",\r\n        \"gestao\": \"gestao\",\r\n        \"movimentacao\": \"movimentacao\"\r\n    }\r\n]\r\n"
 						}
@@ -248,8 +248,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": " {\r\n        \"modelo\": \"93MP\",\r\n        \"marca\": \"lenovo\",\r\n        \"dataAquisicao\": null,\r\n        \"tipo\": \"Microcomputador\",\r\n        \"serie\": 524877,\r\n        \"idGestao\": \"Dotação\",\r\n        \"idAgencia\": 93,\r\n        \"idEstoque\": null,\r\n        \"estoque\": null,\r\n        \"agencia\": 93,\r\n        \"gestao\": \"Dotação\",\r\n        \"movimentacao\": \"idEquipamento\"\r\n    }"
 						}
@@ -319,8 +319,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": " {\r\n        \"modelo\": \"93MP\",\r\n        \"marca\": \"lenovo\",\r\n        \"dataAquisicao\": null,\r\n        \"tipo\": \"Microcomputador\",\r\n        \"serie\": 524188,\r\n        \"idGestao\": \"Dotação\",\r\n        \"idAgencia\": null,\r\n        \"idEstoque\": 04312EX000,\r\n        \"estoque\": null,\r\n        \"agencia\": 93,\r\n        \"gestao\": \"Dotação\",\r\n        \"movimentacao\": \"idEquipamento\"\r\n    }"
 						}
@@ -388,8 +388,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "\r\n    {\r\n    \"idJuncao\": \"93\",\r\n    \"nome\": \"Santa Cecilia\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"}\r\n    }"
 						}
@@ -449,8 +449,8 @@
 								}
 							},
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"idJuncao\",\r\n    \"nome\": \"nome\", \r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"\r\n}\r\n}\r\n"
 						}
@@ -513,8 +513,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"93\",\r\n    \"nome\": \"Santa Cecilia - SP\"\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"}\r\n}"
 						}
@@ -577,8 +577,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"93\",\r\n    \"nome\": \"Santa Cecilia\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"}\r\n}"
 						}
@@ -640,8 +640,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "[{\r\n    \"idDcm\": \"1246756\",\r\n    \"valor\": 10,\r\n    \"dataMovimentacao\": 10.22,\r\n    \"juncaoRemetente\": \"04312EX000\",\r\n    \"juncaoDestinatario\":\"00093SE000\"\r\n}]"
 						}
@@ -654,7 +654,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idDcm\": \"185415\",\r\n    \"valor\": 158,\r\n    \"dataMovimentacao\": \"2021-11-11\",\r\n    \"juncaoRemetente\": \"04312EX001\",\r\n    \"juncaoDestinatario\":\"y\",\r\n    \"idEquipamento\": 4\r\n    }",
+							"raw": "{\r\n    \"idDcm\": \"185415\",\r\n    \"valor\": 158,\r\n    \"dataMovimentacao\": \"2021-11-11\",\r\n    \"juncaoRemetente\": \"04312EX002\",\r\n    \"juncaoDestinatario\":\"y\",\r\n    \"idEquipamento\": 1\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -701,8 +701,8 @@
 								}
 							},
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idDcm\": \"idDcm\",\r\n    \"valor\": 10,\r\n    \"dataMovimentacao\": 10.22,\r\n    \"juncaoRemetente\": \"04312EX000\",\r\n    \"juncaoDestinatario\":\"00093SE000\",\r\n    \"movimentacao\":{\r\n        \"idEquipamento\":\"idEquipamento\",\r\n        \"idDcm\":\"idDcm\"\r\n}"
 						}
@@ -768,8 +768,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"Junção do estoque\",\r\n    \"nome\":\"Nome do Estoque\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"\r\n    }\r\n}"
 						}
@@ -830,8 +830,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"Junção do estoque\",\r\n    \"nome\":\"Galpão\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"\r\n    }\r\n}\r\n"
 						}
@@ -873,8 +873,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"04312EX000\",\r\n    \"nome\":\"Nome do Estoque\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"\r\n    }\r\n}"
 						}
@@ -917,8 +917,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"idJuncao\": \"04312EX000\",\r\n    \"nome\":\"Nome do Estoque\",\r\n    \"Endereço\":{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Cidade\"\r\n    }\r\n}"
 						}
@@ -965,8 +965,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n        \"id\": \"id\",\r\n        \"junção\":\"Junção completa\",\r\n        \"logradouro\":\"Logradouro\",\r\n        \"numero\":\"Número\",\r\n        \"complemento\":\"Complemento do endereço\",\r\n        \"bairro\":\"Bairro\",\r\n        \"cidade\":\"Santos\"\r\n}"
 						}
@@ -1031,8 +1031,8 @@
 								}
 							},
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"id\":\"1\",\r\n    \"departamento\":\"dotação\"\r\n}"
 						}
@@ -1093,8 +1093,8 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"id\":\"id\",\r\n    \"departamento\":\"Segurança e Energia\"\r\n}"
 						}
@@ -1136,8 +1136,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"id\":\"id\",\r\n    \"departamento\":\"dotacao\"\r\n}"
 						}
@@ -1180,8 +1180,8 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
 							"body": "{\r\n    \"id\":\"6\",\r\n    \"departamento\":\"departamento\"\r\n}"
 						}
