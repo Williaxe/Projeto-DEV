@@ -32,12 +32,6 @@ public class EquipamentoController {
         return equipamentoService.save(equipamento);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Object> deletaEquipamento(@PathVariable (value = "id") Integer id) throws Exception {
-        equipamentoService.delete(id);
-        return ResponseEntity.noContent().build();
-    }
-
     @PatchMapping("/{id}")
     public Equipamento alterarEquipamento(@PathVariable(value = "id")Integer idEquipamento,
                                           @RequestBody Equipamento equipamento){

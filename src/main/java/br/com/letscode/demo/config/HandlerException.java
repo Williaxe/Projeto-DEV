@@ -31,4 +31,5 @@ public class HandlerException {
                 .build();
         return apiErro;
     }
+
     }

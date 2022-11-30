@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service("Equipamento")
+@Service("equipamentos")
 public class EquipamentosServiceImpl implements EquipamentoService{
 
     @Autowired
@@ -40,13 +40,4 @@ public class EquipamentosServiceImpl implements EquipamentoService{
         return equipamentoRepository.save(equipamento);
     }
 
-    @Override
-    public void delete(Integer id) throws Exception {
-        if(equipamentoRepository.findById(id).get().getDcm() != null){
-            throw new Exception("Equipamento vinculado a um DCM");
-        }
-
-        equipamentoRepository.deleteById(id);
-
-    }
 }

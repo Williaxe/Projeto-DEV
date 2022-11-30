@@ -39,10 +39,6 @@ public class DcmServiceImpl implements DCMService {
         if (equipamento.isEmpty()){
             throw new EquipamentoNaoLocalizado();
 
-   //  public DCM save(DCMDto dto) throws HandlerException {
-   //      var equipamento = equipamentoRepository.findById(dto.getIdEquipamento());
-    //    if (equipamento.isEmpty()){
-    //        throw new HandlerException("Equipamento não localizado");
         }
         if (equipamento.get().getJuncaoAtual().equalsIgnoreCase(dto.getJuncaoRemetente())){
             var dcm = DCM.builder()

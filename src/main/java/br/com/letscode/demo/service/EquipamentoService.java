@@ -11,8 +11,5 @@ public interface EquipamentoService {
     List<Equipamento> getByIdMarca(String marca);
     List<Equipamento> getByIdModelo(String modelo);
     Equipamento update(Integer id, Equipamento equipamento);
-    void delete(Integer id) throws Exception;
-
-
 
 }
