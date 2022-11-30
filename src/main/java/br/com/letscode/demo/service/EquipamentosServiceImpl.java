@@ -26,7 +26,7 @@ public class EquipamentosServiceImpl implements EquipamentoService{
     @Override
     public List<Equipamento> getByIdMarca(String marca) {
  //       return (List<Equipamento>) equipamentoRepository.findAllByMarca(marca);
-        return (List<Equipamento>) equipamentoRepository.findAll();
+        return (List<Equipamento>) equipamentoRepository.findAllByMarca(marca);
   }
 
     @Override
